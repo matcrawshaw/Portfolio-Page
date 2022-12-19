@@ -1,0 +1,221 @@
+:root {
+--background-color: grey;
+--title-background: rgba(49, 139, 180, 0.548);
+--navbg: rgb(31, 31, 31);
+--light: #fff;
+--hover: lightblue;
+}
+body { 
+  
+ display: flex;
+  flex-direction: column;
+  line-height: 1.2
+
+}
+
+* {
+
+  font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--navbg);
+  color: var(--light);
+white-space: nowrap;
+flex-wrap: wrap;}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  list-style: none;
+  mar
+}
+
+
+nav a {
+ 
+  color: var(--title-background);
+  font-weight: bold;
+text-decoration: underline 1px ;
+margin: 4px
+
+}
+
+
+
+.maintitle {
+  background-color: var(--title-background);
+  display: inline;
+  float: right;
+
+}
+
+
+
+nav a:hover {
+  color: var(--hover);
+}
+
+.hero-banner {
+  height: 175px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+}
+.bannertext {
+  margin-left: 70%;
+margin-top: 8rem;
+  background-color: var(--title-background);
+  display: inline-block;
+  float: right;
+  border: 6px;
+}
+
+.hero-banner .bannertext {
+
+  position: relative; 
+display: flex;
+white-space: nowrap;
+justify-content: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.aside {
+  width: 12%;
+ 
+
+  white-space: pre;
+  text-align: right;
+  line-height:2.5em ;
+  margin-top: -5rem;
+}
+
+
+
+main {
+margin-left: 20rem;
+margin-top: -35rem;
+width: 100rem;
+
+}
+
+.mainandaside {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+  
+
+#about {
+
+ text-align: right;
+  display: inline;
+
+
+}
+
+
+.abouttext {
+
+  margin-top: 7rem;
+
+border-left: 3px solid black;
+
+
+}
+
+.worktitle {
+  margin-top: -12rem;
+  text-align: right;
+  }
+
+.workgrid {
+  border-left: 3px solid black;
+
+  margin-top: 4rem;
+  display: grid;
+ 
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "surfreport surfreport surfreport surfreport ledwall calculator pastelpuzzles runbudy";
+  grid-gap: 10rem;
+  height: 70rem
+ 
+}
+
+.gridarea {
+
+  border: aqua 6px;
+}
+
+#surfreport {
+  grid-area: surfreport;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  background-position: center;
+ height: 400px;
+
+
+  
+}
+#ledwall {
+
+  grid-area: ledwall;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#calculator {
+
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#pastelpuzzles {
+
+  grid-area: pastelpuzzles;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#runbudy {
+
+  grid-area: runbudy;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  
+}
+h2 {
+
+
+}
