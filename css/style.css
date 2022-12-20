@@ -6,35 +6,33 @@
 --hover: lightblue;
 }
 body { 
-  
- display: flex;
-  flex-direction: column;
   line-height: 1.2
 
 }
 
 * {
 
-  font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   padding: 1%;
   background-color: var(--navbg);
   color: var(--light);
 white-space: nowrap;
-flex-wrap: wrap;}
+flex-wrap: wrap;
+
+}
 
 
 nav ul {
   display: flex;
-  justify-content: space-between;
-  min-width: 300px;
   list-style: none;
-  mar
+  
 }
 
 
@@ -42,25 +40,26 @@ nav a {
  
   color: var(--title-background);
   font-weight: bold;
-text-decoration: underline 1px ;
-margin: 4px
+
+margin: 6px
 
 }
-
-
-
-.maintitle {
-  background-color: var(--title-background);
-  display: inline;
-  float: right;
-
-}
-
 
 
 nav a:hover {
   color: var(--hover);
 }
+
+
+.maintitle {
+  background-color: var(--title-background);
+
+
+
+}
+
+
+
 
 .hero-banner {
   height: 175px;
@@ -70,8 +69,8 @@ nav a:hover {
  
 }
 .bannertext {
-  margin-left: 70%;
-margin-top: 8rem;
+ 
+margin-top: 8.5rem;
   background-color: var(--title-background);
   display: inline-block;
   float: right;
@@ -80,97 +79,72 @@ margin-top: 8rem;
 
 .hero-banner .bannertext {
 
-  position: relative; 
-display: flex;
 white-space: nowrap;
-justify-content: center;
 }
 
 
-* {
-  box-sizing: border-box;
-}
-
-
-
-.aside {
-  width: 12%;
- 
-
-  white-space: pre;
+.asidew {
+  position: absolute;
+  margin-left: -7rem;
+  margin-top: 7rem;
   text-align: right;
-  line-height:2.5em ;
-  margin-top: -5rem;
+  
 }
-
-
 
 main {
-margin-left: 20rem;
-margin-top: -35rem;
-width: 100rem;
+margin-left: 15rem;
+
+width: 80%;
 
 }
 
-.mainandaside {
+
+
+.aboutwrap {
   display: flex;
-  flex-wrap: nowrap;
-}
-
-  
-
-#about {
-
- text-align: right;
-  display: inline;
-
-
 }
 
 
 .abouttext {
 
   margin-top: 7rem;
-
+padding-left: 1rem ;
 border-left: 3px solid black;
 
 
 }
 
-.worktitle {
-  margin-top: -12rem;
-  text-align: right;
-  }
+#worktitle {
+  margin-top: 1.5rem;
+  margin-left: -6.5rem
+}
+  
 
 .workgrid {
+  padding-left: 1rem ;
   border-left: 3px solid black;
-
   margin-top: 4rem;
   display: grid;
- 
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-  "surfreport surfreport surfreport surfreport ledwall calculator pastelpuzzles runbudy";
-  grid-gap: 10rem;
+  "surfreport surfreport"
+  "surfreport surfreport"
+  "ledwall calculator" 
+  "pastelpuzzles runbudy";
+  grid-gap: 1.3rem;
   height: 70rem
  
 }
 
-.gridarea {
 
-  border: aqua 6px;
-}
 
 #surfreport {
   grid-area: surfreport;
   background-image: url(../images/02-portfolio-4.jpg);
   background-size: cover;
   background-position: center;
- height: 400px;
 
-
-  
 }
 #ledwall {
 
@@ -182,7 +156,7 @@ border-left: 3px solid black;
 #calculator {
 
   grid-area: calculator;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -190,17 +164,44 @@ border-left: 3px solid black;
 #pastelpuzzles {
 
   grid-area: pastelpuzzles;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-3.jpg);
   background-size: cover;
   background-position: center;
 }
 #runbudy {
 
   grid-area: runbudy;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-run-buddy.jpg);
   background-size: cover;
   background-position: center;
 }
+
+.gridbox {
+  background-color: rgba(252, 251, 251, 0.7);
+  border-bottom: 4px solid #5a6aa0;
+width: 12rem;
+padding: .9rem;
+height: 4.5rem;
+line-height: 0px;
+margin-top: 6rem;
+align-items: center;
+opacity: 80%;
+}
+#surfbox {
+margin-top: 25rem;
+}
+
+.gridtitle {
+  margin-top: 1rem
+}
+
+.gridsubtitle {
+font-size: 80%;
+  margin-top: 1.5rem;
+ font-weight:500
+}
+
+
 
 h1,
 h2,
@@ -214,8 +215,4 @@ h6 {
 p {
   margin: 0;
   
-}
-h2 {
-
-
 }
