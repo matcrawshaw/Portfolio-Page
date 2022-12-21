@@ -19,12 +19,14 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-
+margin: 0;
   padding: 1%;
   background-color: var(--navbg);
   color: var(--light);
 white-space: nowrap;
 flex-wrap: wrap;
+
+
 
 }
 
@@ -58,6 +60,19 @@ nav a:hover {
 
 }
 
+@media screen and (max-width: 600px) {
+.maintitle {
+ align-self: center;
+}
+
+ header {
+  display: block;
+ text-align: center;
+ justify-content: center;
+ }
+
+
+}
 
 
 
@@ -133,7 +148,8 @@ border-left: 3px solid black;
   "ledwall calculator" 
   "pastelpuzzles runbudy";
   grid-gap: 1.3rem;
-  height: 70rem
+  height: 70rem;
+ 
  
 }
 
@@ -141,10 +157,10 @@ border-left: 3px solid black;
 
 #surfreport {
   grid-area: surfreport;
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/project1.PNG);
   background-size: cover;
   background-position: center;
-
+  border: 3px solid aqua;
 }
 #ledwall {
 
@@ -152,6 +168,7 @@ border-left: 3px solid black;
   background-image: url(../images/02-portfolio-1.jpg);
   background-size: cover;
   background-position: center;
+  border: 3px solid aqua;
 }
 #calculator {
 
@@ -159,7 +176,8 @@ border-left: 3px solid black;
   background-image: url(../images/02-portfolio-2.jpg);
   background-size: cover;
   background-position: center;
-}
+  border: 3px solid aqua;
+  border: 3px solid aqua;}
 
 #pastelpuzzles {
 
@@ -167,6 +185,7 @@ border-left: 3px solid black;
   background-image: url(../images/02-portfolio-3.jpg);
   background-size: cover;
   background-position: center;
+  border: 3px solid aqua;
 }
 #runbudy {
 
